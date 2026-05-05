@@ -6,20 +6,20 @@ A full-featured Restaurant Point of Sale (POS) system built with **Laravel 13** 
 
 <table>
   <tr>
-    <td><img src="screenshots/s1.jpeg" alt="Dashboard" width="400"/></td>
-    <td><img src="screenshots/s2.jpeg" alt="POS Terminal" width="400"/></td>
+    <td align="center"><b>Login</b><br/><img src="screenshots/s1.jpeg" alt="Login" width="400"/></td>
+    <td align="center"><b>Dashboard</b><br/><img src="screenshots/s2.jpeg" alt="Dashboard" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="screenshots/s3.jpeg" alt="Table Floor Plan" width="400"/></td>
-    <td><img src="screenshots/s4.jpeg" alt="Menu Management" width="400"/></td>
+    <td align="center"><b>Tables / POS</b><br/><img src="screenshots/s3.jpeg" alt="Tables POS" width="400"/></td>
+    <td align="center"><b>Menu Management</b><br/><img src="screenshots/s4.jpeg" alt="Menu Management" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="screenshots/s5.jpeg" alt="Kitchen Display System" width="400"/></td>
-    <td><img src="screenshots/s6.jpeg" alt="Order Management" width="400"/></td>
+    <td align="center"><b>Orders</b><br/><img src="screenshots/s5.jpeg" alt="Orders" width="400"/></td>
+    <td align="center"><b>Kitchen Display System</b><br/><img src="screenshots/s6.jpeg" alt="Kitchen Display" width="400"/></td>
   </tr>
   <tr>
-    <td><img src="screenshots/s7.jpeg" alt="Inventory" width="400"/></td>
-    <td><img src="screenshots/s8.jpeg" alt="Reports" width="400"/></td>
+    <td align="center"><b>Inventory</b><br/><img src="screenshots/s7.jpeg" alt="Inventory" width="400"/></td>
+    <td align="center"><b>Settings</b><br/><img src="screenshots/s8.jpeg" alt="Settings" width="400"/></td>
   </tr>
 </table>
 
