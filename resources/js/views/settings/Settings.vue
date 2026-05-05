@@ -264,8 +264,8 @@ async function loadSettings() {
             fssai_license: restaurant.fssai_license ?? '',
             currency_symbol: restaurant.currency_symbol ?? '₹',
             timezone: restaurant.timezone ?? 'Asia/Kolkata',
-            operation_start_time: restaurant.operation_start_time ?? '09:00',
-            operation_end_time: restaurant.operation_end_time ?? '23:00',
+            operation_start_time: (restaurant.operation_start_time ?? '09:00').substring(0, 5),
+            operation_end_time: (restaurant.operation_end_time ?? '23:00').substring(0, 5),
             address: restaurant.address ?? '',
             is_24x7: restaurant.is_24x7 ?? false,
         })
