@@ -73,10 +73,12 @@
 </template>
 
 <script setup>
-import { ref, reactive } from 'vue'
+import { ref, reactive, onMounted } from 'vue'
 import { useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import { UtensilsCrossed } from 'lucide-vue-next'
+
+onMounted(() => { document.title = 'Restaurant POS' })
 
 const auth = useAuthStore()
 const router = useRouter()

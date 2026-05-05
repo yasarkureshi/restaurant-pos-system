@@ -75,7 +75,7 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
+import { ref, computed, watch, onMounted } from 'vue'
 import { useRoute, useRouter } from 'vue-router'
 import { useAuthStore } from '@/stores/auth.js'
 import {
@@ -123,6 +123,7 @@ const pageTitles = {
 }
 
 const pageTitle = computed(() => pageTitles[route.name] ?? 'Restaurant POS')
+watch(pageTitle, title => { document.title = title + ' | Restaurant POS' }, { immediate: true })
 
 async function handleLogout() {
     await auth.logout()
