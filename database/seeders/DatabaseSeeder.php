@@ -20,9 +20,9 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
         $org = Organization::create([
-            'name' => 'PetPooja Restaurants',
-            'slug' => 'petpooja-restaurants',
-            'email' => 'admin@petpooja.com',
+            'name' => 'Restaurant Group',
+            'slug' => 'restaurant-group',
+            'email' => 'admin@restaurantpos.com',
             'phone' => '9999999999',
             'subscription_plan' => 'premium',
             'is_active' => true,
@@ -30,10 +30,10 @@ class DatabaseSeeder extends Seeder
 
         $restaurant = Restaurant::create([
             'organization_id' => $org->id,
-            'name' => 'PetPooja - Main Branch',
+            'name' => 'Restaurant - Main Branch',
             'code' => 'PPM',
-            'slug' => 'petpooja-main',
-            'email' => 'main@petpooja.com',
+            'slug' => 'restaurant-main',
+            'email' => 'main@restaurantpos.com',
             'phone' => '9876543210',
             'address' => '123 MG Road, Koramangala',
             'city' => 'Bengaluru',
@@ -112,9 +112,9 @@ class DatabaseSeeder extends Seeder
 
         $managerRole->permissions()->sync(array_values($permissionIds));
 
-        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $adminRole->id, 'name' => 'Admin User', 'email' => 'admin@petpooja.com', 'password' => Hash::make('password123'), 'phone' => '9876543210', 'employee_code' => 'EMP001', 'pin_code' => '1234', 'date_of_joining' => now()->toDateString(), 'is_active' => true]);
-        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $cashierRole->id, 'name' => 'Cashier User', 'email' => 'cashier@petpooja.com', 'password' => Hash::make('password123'), 'phone' => '9876543211', 'employee_code' => 'EMP002', 'pin_code' => '5678', 'date_of_joining' => now()->toDateString(), 'is_active' => true]);
-        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $kitchenRole->id, 'name' => 'Kitchen Staff', 'email' => 'kitchen@petpooja.com', 'password' => Hash::make('password123'), 'phone' => '9876543212', 'employee_code' => 'EMP003', 'pin_code' => '9012', 'is_active' => true]);
+        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $adminRole->id, 'name' => 'Admin User', 'email' => 'admin@restaurantpos.com', 'password' => Hash::make('password123'), 'phone' => '9876543210', 'employee_code' => 'EMP001', 'pin_code' => '1234', 'date_of_joining' => now()->toDateString(), 'is_active' => true]);
+        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $cashierRole->id, 'name' => 'Cashier User', 'email' => 'cashier@restaurantpos.com', 'password' => Hash::make('password123'), 'phone' => '9876543211', 'employee_code' => 'EMP002', 'pin_code' => '5678', 'date_of_joining' => now()->toDateString(), 'is_active' => true]);
+        User::create(['restaurant_id' => $restaurant->id, 'role_id' => $kitchenRole->id, 'name' => 'Kitchen Staff', 'email' => 'kitchen@restaurantpos.com', 'password' => Hash::make('password123'), 'phone' => '9876543212', 'employee_code' => 'EMP003', 'pin_code' => '9012', 'is_active' => true]);
 
         $gst5 = TaxCategory::create(['restaurant_id' => $restaurant->id, 'name' => 'GST 5%', 'tax_percentage' => 5, 'cgst_percentage' => 2.5, 'sgst_percentage' => 2.5, 'is_active' => true]);
         TaxCategory::create(['restaurant_id' => $restaurant->id, 'name' => 'GST 12%', 'tax_percentage' => 12, 'cgst_percentage' => 6, 'sgst_percentage' => 6, 'is_active' => true]);
@@ -188,6 +188,6 @@ class DatabaseSeeder extends Seeder
             Table::create(['restaurant_id' => $restaurant->id, 'section_id' => $sectionId, 'name' => $name, 'table_number' => $num, 'capacity' => $cap, 'table_type' => $type, 'status' => 'available', 'is_active' => true]);
         }
 
-        $this->command->info('✅ Database seeded! Login: admin@petpooja.com / password123');
+        $this->command->info('✅ Database seeded! Login: admin@restaurantpos.com / password123');
     }
 }

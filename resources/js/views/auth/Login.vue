@@ -6,7 +6,7 @@
                 <div class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mx-auto mb-4">
                     <UtensilsCrossed class="w-8 h-8 text-white" />
                 </div>
-                <h1 class="text-2xl font-bold text-gray-900">PetPooja POS</h1>
+                <h1 class="text-2xl font-bold text-gray-900">Restaurant POS</h1>
                 <p class="text-gray-500 text-sm mt-1">Restaurant Point of Sale System</p>
             </div>
 

@@ -6,10 +6,10 @@
             <div class="flex items-center gap-2 p-2.5 border-b border-gray-700 min-h-12">
                 <div class="w-6 h-6 rounded flex items-center justify-center flex-shrink-0 overflow-hidden"
                     :style="{ background: primaryColor }">
-                    <span v-if="!restaurantLogo" class="font-bold text-xs text-white">PP</span>
+                    <span v-if="!restaurantLogo" class="font-bold text-xs text-white">RP</span>
                     <img v-else :src="restaurantLogo" class="w-full h-full object-cover" alt="logo" />
                 </div>
-                <span v-if="sidebarOpen" class="font-bold text-xs truncate">{{ auth.restaurant?.name ?? 'PetPooja POS' }}</span>
+                <span v-if="sidebarOpen" class="font-bold text-xs truncate">{{ auth.restaurant?.name ?? 'Restaurant POS' }}</span>
             </div>
 
             <!-- Nav -->
@@ -122,7 +122,7 @@ const pageTitles = {
     settings:     'Settings',
 }
 
-const pageTitle = computed(() => pageTitles[route.name] ?? 'PetPooja POS')
+const pageTitle = computed(() => pageTitles[route.name] ?? 'Restaurant POS')
 
 async function handleLogout() {
     await auth.logout()
