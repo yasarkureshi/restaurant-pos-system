@@ -6,20 +6,24 @@ A full-featured Restaurant Point of Sale (POS) system built with **Laravel 13** 
 
 <table>
   <tr>
-    <td align="center"><b>Login</b><br/><img src="screenshots/s1.jpeg" alt="Login" width="400"/></td>
-    <td align="center"><b>Dashboard</b><br/><img src="screenshots/s2.jpeg" alt="Dashboard" width="400"/></td>
+    <td align="center"><b>Dashboard</b><br/><img src="screenshots/s1.JPG" alt="Dashboard" width="400"/></td>
+    <td align="center"><b>Tables / POS</b><br/><img src="screenshots/s2.JPG" alt="Tables POS" width="400"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Tables / POS</b><br/><img src="screenshots/s3.jpeg" alt="Tables POS" width="400"/></td>
-    <td align="center"><b>Menu Management</b><br/><img src="screenshots/s4.jpeg" alt="Menu Management" width="400"/></td>
+    <td align="center"><b>POS Terminal</b><br/><img src="screenshots/s3.JPG" alt="POS Terminal" width="400"/></td>
+    <td align="center"><b>Table Management</b><br/><img src="screenshots/s4.JPG" alt="Table Management" width="400"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Orders</b><br/><img src="screenshots/s5.jpeg" alt="Orders" width="400"/></td>
-    <td align="center"><b>Kitchen Display System</b><br/><img src="screenshots/s6.jpeg" alt="Kitchen Display" width="400"/></td>
+    <td align="center"><b>Orders</b><br/><img src="screenshots/s5.JPG" alt="Orders" width="400"/></td>
+    <td align="center"><b>Menu Management</b><br/><img src="screenshots/s6.JPG" alt="Menu Management" width="400"/></td>
   </tr>
   <tr>
-    <td align="center"><b>Inventory</b><br/><img src="screenshots/s7.jpeg" alt="Inventory" width="400"/></td>
-    <td align="center"><b>Settings</b><br/><img src="screenshots/s8.jpeg" alt="Settings" width="400"/></td>
+    <td align="center"><b>Customers</b><br/><img src="screenshots/s7.JPG" alt="Customers" width="400"/></td>
+    <td align="center"><b>Kitchen Display System</b><br/><img src="screenshots/s8.JPG" alt="Kitchen Display System" width="400"/></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Sales Reports</b><br/><img src="screenshots/s9.JPG" alt="Sales Reports" width="400"/></td>
+    <td align="center"><b>Settings</b><br/><img src="screenshots/s10.JPG" alt="Settings" width="400"/></td>
   </tr>
 </table>
 
